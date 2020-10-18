@@ -1,0 +1,474 @@
+@import "./mixins";
+@import "./var";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @include center;
+  background: $innerbg;
+}
+
+.inner {
+  @include center;
+  gap: 3rem;
+  width: 100%;
+  height: 90%;
+  .right,
+  .left {
+    background: $innerbg;
+    height: 100%;
+    width: 100%;
+    background: #1c1f26;
+    box-shadow: 5px 5px 10px #0b0c0f, -5px -5px 10px #2d323d;
+    border-radius: 2rem;
+  }
+}
+
+.left {
+  position: relative;
+  // width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .top {
+    color: white;
+    @include center;
+    justify-content: space-between;
+    padding: 1rem;
+    .other {
+      @include center;
+      @include center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .time {
+      @include font;
+      font-family: monospace;
+      font-size: 15px;
+    }
+  }
+}
+
+.current {
+  @include center;
+  justify-content: space-between;
+  padding: 1rem;
+  .chat {
+    @include font;
+    font-family: helvetica;
+  }
+  .profilecon {
+    width: 100px;
+    height: 100%;
+    @include center;
+    justify-content: space-between;
+    color: white;
+    gap: 1rem;
+    @include center;
+    @include font;
+    .img {
+      width: 100px;
+      height: 50px;
+      position: relative;
+      background: url("./1.jpg");
+      @include bg;
+      box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+      border-radius: 50%;
+      transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
+  }
+  .addcon {
+    color: white;
+    box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+    padding: 1rem;
+    border-radius: 50%;
+    background: $maincolor;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    &:hover {
+      transform: scale(0.9);
+    }
+    &:active {
+      box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+    }
+  }
+}
+
+.search {
+  @include center;
+  @include font;
+  padding: 0.2rem;
+  input {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    width: 86%;
+    background: #121416dc;
+    border-radius: 2rem;
+    color: white;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    &:hover {
+      transform: scale(1.05);
+    }
+    &:active {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// list of contacts
+
+.contactlist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 65%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.contacts {
+  @include center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid $bodybg;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  .pleft {
+    @include center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: white;
+    .profile {
+      width: 50px;
+      height: 50px;
+      background: url(./1.jpg);
+      border-radius: 50%;
+      @include bg;
+      box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+      transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
+    .ptext {
+      .one {
+        @include font;
+        color: rgba(255, 255, 255, 0.911);
+        font-size: 14px;
+        font-family: helvetica;
+      }
+      .two {
+        font-family: helvetica;
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.61);
+      }
+    }
+  }
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+.count {
+  @include center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.8rem;
+  font-family: monospace;
+  .counttop {
+    color: $maincolor;
+    @include font;
+    font-family: monospace;
+    font-size: 13px;
+  }
+  .countbottom {
+    background: $maincolor;
+    color: white;
+    box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+}
+
+.bar {
+  z-index: 1000;
+  @include center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 1rem;
+  width: 88%;
+  left: 1.25rem;
+  .socials {
+    @include center;
+    justify-content: space-evenly;
+    width: 100%;
+    background: #1c1f26;
+    box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
+    padding: 0.6rem;
+    border-radius: 2rem;
+    color: white;
+    .chat {
+      font-size: 1.3rem;
+      border-radius: 50%;
+      background: #1c1f26;
+      box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
+      padding: 1rem;
+      transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      &:hover {
+        transform: scale(0.85);
+        color: $maincolor;
+      }
+      &:active {
+        box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+      }
+    }
+  }
+  .underbar {
+    width: 40%;
+    background: rgba(255, 255, 255, 0.514);
+    height: 5px;
+    border-radius: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+// the toggler
+.toggler {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -0.5rem;
+  right: -0.5rem;
+  background: #1c1f26;
+  box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transform: scale(0.9);
+  &:active {
+    box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+  }
+}
+
+.badremover {
+  display: none;
+}
+// the right mochup section
+
+.leftcurrent {
+  @include center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+  .leftaddcon {
+    color: $maincolor;
+    box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    &:hover {
+      transform: scale(0.9);
+    }
+    &:active {
+      box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+    }
+  }
+  .chat {
+    flex: 1;
+    @include font;
+    font-family: helvetica;
+    .leftn {
+      font-size: 16px;
+      width: 100%;
+    }
+    .lefts {
+      font-size: 11px;
+      width: 100%;
+    }
+  }
+  .profilecon {
+    width: 100px;
+    height: 100%;
+    @include center;
+    justify-content: space-between;
+    color: white;
+    flex: 1;
+    gap: 1rem;
+    @include font;
+    .img {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      background: url("./1.jpg");
+      @include bg;
+      box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+      border-radius: 50%;
+      transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
+  }
+  .addcon {
+    color: white;
+    box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+    padding: 1rem;
+    border-radius: 50%;
+    background: $maincolor;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    &:hover {
+      transform: scale(0.9);
+    }
+    &:active {
+      box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+    }
+  }
+}
+
+.today {
+  @include font;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.829);
+  font-family: helvetica;
+  font-size: 12px;
+}
+
+.chathistory {
+  margin-top: 1rem;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  .guest {
+    @include center;
+    align-items: flex-end;
+    margin-top: 1rem;
+    position: relative;
+    left: 2.8rem;
+    background: $maincolor;
+    color: white;
+    max-width: 70%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem;
+    @include font;
+    justify-content: space-between;
+    font-family: helvetica;
+    font-size: 14px;
+    transition: all 0.25s ease-in;
+    &:hover {
+      transform: scale(0.9);
+    }
+    .time {
+      font-size: 11px;
+    }
+  }
+  .host {
+    @include center;
+    align-items: flex-end;
+    margin-top: 1rem;
+    position: relative;
+    left: 1rem;
+    background: #121416dc;
+    color: white;
+    max-width: 70%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 3rem;
+    padding: 1rem;
+    @include font;
+    justify-content: space-between;
+    font-family: helvetica;
+    font-size: 14px;
+    transition: all 0.25s ease-in;
+    &:hover {
+      transform: scale(0.9);
+    }
+    .time {
+      font-size: 11px;
+    }
+  }
+}
+.typemessage {
+  @include center;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  .in {
+    @include center;
+    justify-content: space-between;
+    height: 2.5rem;
+    .record {
+      border-radius: 50%;
+      height: 100%;
+      @include center;
+      color: $maincolor;
+      padding: 5px;
+      box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+      width: 2.2rem;
+      margin-left: 0.4rem;
+      &:active {
+        box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+      }
+    }
+    .box {
+      padding-left: 10px;
+      padding-right: 10px;
+      gap: 1rem;
+      @include center;
+      flex: 1;
+      height: 100%;
+      background: #1c1f26;
+      outline: none;
+      border-radius: 2rem;
+      background: #1c1f26;
+      box-shadow: inset 5px 5px 10px #0b0c0f, inset -5px -5px 10px #2d323d;
+      transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+      input {
+        height: 100%;
+        outline: none;
+        background: none;
+        border: none;
+        color: white;
+      }
+      .imogi {
+        color: $maincolor;
+        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+  }
+  .underbar {
+    width: 40%;
+    background: rgba(255, 255, 255, 0.514);
+    height: 5px;
+    border-radius: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+.ra {
+  width: 350px !important;
+}
+
+.la {
+  width: 350px !important;
+}
