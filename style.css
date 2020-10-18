@@ -3,30 +3,17 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #1c1f26;
 }
 
 .inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
   width: 100%;
   height: 90%;
@@ -38,56 +25,34 @@ body {
   height: 100%;
   width: 100%;
   background: #1c1f26;
-  -webkit-box-shadow: 5px 5px 10px #0b0c0f, -5px -5px 10px #2d323d;
-          box-shadow: 5px 5px 10px #0b0c0f, -5px -5px 10px #2d323d;
+  box-shadow: 5px 5px 10px #0b0c0f, -5px -5px 10px #2d323d;
   border-radius: 2rem;
 }
 
 .left {
   position: relative;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .left .top {
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem;
 }
 
 .left .top .other {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   gap: 10px;
 }
 
@@ -99,18 +64,10 @@ body {
 }
 
 .current {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -123,18 +80,10 @@ body {
 .current .profilecon {
   width: 100px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   color: white;
   gap: 1rem;
   display: flex;
@@ -152,49 +101,36 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
-          box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+  box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
   border-radius: 50%;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .current .profilecon .img:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .current .addcon {
   color: white;
-  -webkit-box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
-          box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+  box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
   padding: 1rem;
   border-radius: 50%;
   background: #c03834;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .current .addcon:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .current .addcon:active {
-  -webkit-box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
-          box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+  box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
 }
 
 .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   font-family: verdana;
   padding: 0.2rem;
@@ -208,28 +144,20 @@ body {
   background: #121416dc;
   border-radius: 2rem;
   color: white;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .search input:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .search input:active {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .contactlist {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -241,37 +169,20 @@ body {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem;
   border-bottom: 1px solid #363940;
-  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .contacts .pleft {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   color: white;
 }
@@ -284,15 +195,12 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
-          box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .contacts .pleft .profile:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .contacts .pleft .ptext .one {
@@ -310,27 +218,15 @@ body {
 }
 
 .contacts:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .count {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 0.8rem;
   font-family: monospace;
 }
@@ -346,37 +242,23 @@ body {
 .count .countbottom {
   background: #c03834;
   color: white;
-  -webkit-box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
-          box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+  box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
   border-radius: 50%;
   padding: 0.5rem;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .count .countbottom:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .bar {
   z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   position: absolute;
   bottom: 1rem;
   width: 88%;
@@ -384,22 +266,13 @@ body {
 }
 
 .bar .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   background: #1c1f26;
-  -webkit-box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
-          box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
+  box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
   padding: 0.6rem;
   border-radius: 2rem;
   color: white;
@@ -409,22 +282,18 @@ body {
   font-size: 1.3rem;
   border-radius: 50%;
   background: #1c1f26;
-  -webkit-box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
-          box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
+  box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
   padding: 1rem;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .bar .socials .chat:hover {
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
+  transform: scale(0.85);
   color: #c03834;
 }
 
 .bar .socials .chat:active {
-  -webkit-box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
-          box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+  box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
 }
 
 .bar .underbar {
@@ -443,17 +312,18 @@ body {
   bottom: -0.5rem;
   right: -0.5rem;
   background: #1c1f26;
-  -webkit-box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
-          box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
+  color: #c03834;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .toggler:active {
-  -webkit-box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
-          box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+  box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
 }
 
 .badremover {
@@ -461,46 +331,32 @@ body {
 }
 
 .leftcurrent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem;
   gap: 1rem;
 }
 
 .leftcurrent .leftaddcon {
   color: #c03834;
-  -webkit-box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
-          box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+  box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
   padding: 1rem;
   border-radius: 50%;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .leftcurrent .leftaddcon:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .leftcurrent .leftaddcon:active {
-  -webkit-box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
-          box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+  box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
 }
 
 .leftcurrent .chat {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   font-weight: bold;
   font-family: verdana;
   font-family: helvetica;
@@ -519,22 +375,12 @@ body {
 .leftcurrent .profilecon {
   width: 100px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   color: white;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   gap: 1rem;
   font-weight: bold;
   font-family: verdana;
@@ -548,37 +394,30 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
-          box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+  box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
   border-radius: 50%;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .leftcurrent .profilecon .img:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .leftcurrent .addcon {
   color: white;
-  -webkit-box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
-          box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+  box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
   padding: 1rem;
   border-radius: 50%;
   background: #c03834;
-  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .leftcurrent .addcon:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .leftcurrent .addcon:active {
-  -webkit-box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
-          box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+  box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
 }
 
 .today {
@@ -597,19 +436,16 @@ body {
   overflow: scroll;
 }
 
+.chathistory .message {
+  width: 80%;
+  word-wrap: break-word;
+}
+
 .chathistory .guest {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
   margin-top: 1rem;
   position: relative;
   left: 2.8rem;
@@ -622,18 +458,14 @@ body {
   padding: 1rem;
   font-weight: bold;
   font-family: verdana;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-family: helvetica;
   font-size: 14px;
-  -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
 
 .chathistory .guest:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .chathistory .guest .time {
@@ -641,18 +473,10 @@ body {
 }
 
 .chathistory .host {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
   margin-top: 1rem;
   position: relative;
   left: 1rem;
@@ -665,18 +489,14 @@ body {
   padding: 1rem;
   font-weight: bold;
   font-family: verdana;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-family: helvetica;
   font-size: 14px;
-  -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
 
 .chathistory .host:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .chathistory .host .time {
@@ -684,88 +504,53 @@ body {
 }
 
 .typemessage {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
 }
 
 .typemessage .in {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   height: 2.5rem;
 }
 
 .typemessage .in .record {
   border-radius: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #c03834;
   padding: 5px;
-  -webkit-box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
-          box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
+  box-shadow: 5px 5px 10px #0b0d10, -5px -5px 10px #2d313c;
   width: 2.2rem;
   margin-left: 0.4rem;
 }
 
 .typemessage .in .record:active {
-  -webkit-box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
-          box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
+  box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
 }
 
 .typemessage .in .box {
   padding-left: 10px;
   padding-right: 10px;
   gap: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
   height: 100%;
   background: #1c1f26;
   outline: none;
   border-radius: 2rem;
   background: #1c1f26;
-  -webkit-box-shadow: inset 5px 5px 10px #0b0c0f, inset -5px -5px 10px #2d323d;
-          box-shadow: inset 5px 5px 10px #0b0c0f, inset -5px -5px 10px #2d323d;
-  -webkit-transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: inset 5px 5px 10px #0b0c0f, inset -5px -5px 10px #2d323d;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -779,18 +564,15 @@ body {
 
 .typemessage .in .box .imogi {
   color: #c03834;
-  -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .typemessage .in .box .imogi:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .typemessage .in .box:hover {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .typemessage .underbar {

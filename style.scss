@@ -258,6 +258,9 @@ body {
   box-shadow: 5px 5px 7px #0b0d10, -5px -5px 7px #2d313c;
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transform: scale(0.9);
+  color: $maincolor;
+  text-align: center;
+  @include center;
   &:active {
     box-shadow: inset 5px 5px 10px #0b0d10, inset -5px -5px 10px #2d313c;
   }
@@ -351,6 +354,10 @@ body {
   height: 100%;
   width: 100%;
   overflow: scroll;
+  .message {
+    width: 80%;
+    word-wrap: break-word;
+  }
   .guest {
     @include center;
     align-items: flex-end;
